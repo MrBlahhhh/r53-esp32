@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — R53 Logger / R53 Coding</title>
+  <style>
+    :root {
+      --bg: #f6f4f1;
+      --ink: #1a1a1a;
+      --muted: #555;
+      --rule: #d8d2c8;
+      --accent: #b33a2b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.55;
+    }
+    main {
+      max-width: 42rem;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 4rem;
+    }
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin: 0 0 0.35rem;
+      letter-spacing: -0.02em;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 1.75rem;
+    }
+    h2 {
+      font-size: 1.15rem;
+      margin: 1.75rem 0 0.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--rule);
+    }
+    p, li { font-size: 1rem; }
+    ul { padding-left: 1.2rem; }
+    a { color: var(--accent); }
+    .apps { margin: 0.75rem 0 0; padding: 0; list-style: none; }
+    .apps li {
+      display: inline-block;
+      margin: 0 0.5rem 0.4rem 0;
+      padding: 0.2rem 0.55rem;
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      font-size: 0.9rem;
+      background: #fff;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last updated: 28 July 2026</p>
+    <ul class="apps">
+      <li>R53 Logger - Flasher</li>
+      <li>R53 Coding</li>
+    </ul>
+    <p>
+      This policy describes how the Android apps <strong>R53 Logger - Flasher</strong>
+      (<code>com.geekopolis.r53logger</code>) and <strong>R53 Coding</strong>
+      (<code>com.geekopolis.r53code</code>) handle information. Both are tools for
+      working with a MINI R53 (W11) vehicle over a USB K+DCAN adapter (and, for the
+      logger, an optional ESP32 Bluetooth LE wideband bridge).
+    </p>
+
+    <h2>Summary</h2>
+    <p>
+      We do <strong>not</strong> run our own servers that collect your personal data.
+      Vehicle and coding data stay on your device unless you choose to share a file.
+      Google Play may process purchase and integrity information when you use paid
+      features, under Google’s policies.
+    </p>
+
+    <h2>Information the apps store on your device</h2>
+    <ul>
+      <li>
+        <strong>Telemetry logs (Logger):</strong> CSV logs of engine / sensor data
+        you record (RPM, temperatures, AFR, etc.). Stored in app-private storage.
+      </li>
+      <li>
+        <strong>ECU / coding backups:</strong> Binary or coding backups you create
+        when reading from the car. Stored locally for restore and share.
+      </li>
+      <li>
+        <strong>Settings:</strong> Preferences such as theme, units, poll rates,
+        wideband calibration, and unlock / purchase cache flags.
+      </li>
+    </ul>
+    <p>
+      These files are not uploaded by the apps. You may export or share them yourself
+      (for example via the Android share sheet or Datazap).
+    </p>
+
+    <h2>Device connections (not sent to us)</h2>
+    <ul>
+      <li>
+        <strong>USB serial (K+DCAN):</strong> Used only to talk to the vehicle modules.
+        Traffic stays between the phone and the car.
+      </li>
+      <li>
+        <strong>Bluetooth LE (Logger wideband):</strong> Connects to your ESP32
+        wideband bridge to receive sensor voltage. No cloud relay.
+      </li>
+      <li>
+        On older Android versions, location permission may be required by the OS
+        for BLE scanning; the apps do not use GPS for mapping or tracking.
+      </li>
+    </ul>
+
+    <h2>Internet use</h2>
+    <p>Internet access is used only for:</p>
+    <ul>
+      <li>
+        <strong>Google Play Billing</strong> — one-time unlock purchases and
+        purchase restoration.
+      </li>
+      <li>
+        <strong>Google Play Integrity</strong> (Logger, when enabled) — the app
+        may request an integrity token from Google and send that token (plus a
+        nonce and package name) to a developer-configured verify endpoint. The
+        token is for app/device integrity, not a profile of your driving.
+      </li>
+    </ul>
+    <p>
+      We do not operate analytics SDKs, ad networks, or crash-reporting backends
+      in these apps. We do not sell personal information.
+    </p>
+
+    <h2>Accounts and children</h2>
+    <p>
+      The apps do not create accounts with us. Purchases use your Google account
+      through Play. The apps are not directed at children under 13.
+    </p>
+
+    <h2>Third parties</h2>
+    <p>
+      Google Play services process billing and (where used) integrity attestation
+      according to
+      <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>.
+      If you share a log or backup with another app or website, that destination’s
+      policy applies.
+    </p>
+
+    <h2>Data retention and deletion</h2>
+    <p>
+      Local logs, backups, and settings remain until you delete them in the app,
+      clear the app’s storage, or uninstall. Uninstalling removes app-private data
+      on the device. Play purchase records are retained by Google as part of your
+      Google account.
+    </p>
+
+    <h2>Changes</h2>
+    <p>
+      If this policy changes, we will update the “Last updated” date on this page.
+      Continued use of the apps after a change means you accept the updated policy.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      Questions about this policy or the apps: use the email address listed on
+      the Play Store developer contact for these apps, or open an issue on the
+      public firmware repository that hosts this page.
+    </p>
+  </main>
+</body>
+</html>
