@@ -9,11 +9,11 @@ This repo holds the open ESP32 sketches and the **Play Store privacy policy**.
 
 ## Privacy policy (Play Console URL)
 
-After push + GitHub Pages (Settings → Pages → Deploy from branch → root `/`):
+After GitHub Pages is on (Settings → Pages → Deploy from branch → root `/`):
 
-`https://<github-user>.github.io/r53-esp32/privacy.html`
+**https://mrblahhhh.github.io/r53-esp32/privacy.html**
 
-Paste that URL into Play Console → App content → Privacy policy for both apps.
+Paste that into Play Console → App content → Privacy policy for both apps.
 
 ## Firmware
 
