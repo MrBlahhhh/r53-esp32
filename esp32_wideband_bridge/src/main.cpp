@@ -21,9 +21,10 @@
 //   Volts NOTIFY   : beb5483e-36e1-4688-b7f5-ea07361b26a8
 //   Hw mode R/W    : beb5483e-36e1-4688-b7f5-ea07361b26a9  (1 byte: 0|1)
 //
-// Libraries: NimBLE-Arduino. ADS1115 path uses Wire only (no Adafruit lib).
+// Libraries: NimBLE-Arduino (platformio.ini). ADS1115 path uses Wire only.
 // ============================================================================
 
+#include <Arduino.h>
 #include <NimBLEDevice.h>
 #include <Wire.h>
 #include <math.h>

@@ -20,12 +20,12 @@ This repo holds the open ESP32 sketches and the **Play Store privacy policy**.
 
 ## Firmware
 
-| Sketch | Role |
+| Project | Role |
 |--------|------|
-| [`esp32_wideband_bridge/`](./esp32_wideband_bridge/) | BLE bridge: streams wideband **0–5 V** to the logger |
-| [`esp32_kline_sniffer/`](./esp32_kline_sniffer/) | Passive K-line listen-only sniffer (ISTA/INPA capture) |
+| [`esp32_wideband_bridge/`](./esp32_wideband_bridge/) | PlatformIO BLE bridge: streams wideband **0–5 V** to the logger |
+| [`esp32_kline_sniffer/`](./esp32_kline_sniffer/) | Arduino K-line listen-only sniffer (ISTA/INPA capture) |
 
-Flash with Arduino IDE + Espressif ESP32 board support. See each folder for wiring.
+Wideband bridge: `cd esp32_wideband_bridge && pio run -t upload`. See that folder’s [WIRING.md](./esp32_wideband_bridge/WIRING.md) and [wiring.svg](./esp32_wideband_bridge/wiring.svg).
 
 ## License
 
