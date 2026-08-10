@@ -22,7 +22,6 @@ This repo holds the open ESP32 sketches and the **Play Store privacy policy**.
 
 | Project | Role |
 |--------|------|
-| [`esp32_wideband_shiftlight/`](./esp32_wideband_shiftlight/) | **One-box**: wideband bridge + WS2812B shift light, RPM written back by the app over the same BLE link |
 | [`esp32_wideband_bridge/`](./esp32_wideband_bridge/) | PlatformIO BLE bridge: streams wideband **0–5 V** to the logger |
 | [`esp32_kline_sniffer/`](./esp32_kline_sniffer/) | Arduino K-line listen-only sniffer (ISTA/INPA capture) |
 
