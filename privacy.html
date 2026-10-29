@@ -60,7 +60,7 @@
 <body>
   <main>
     <h1>Privacy Policy</h1>
-    <p class="meta">Last updated: 28 July 2026</p>
+    <p class="meta">Last updated: 28 October 2026</p>
     <ul class="apps">
       <li>R53 Logger - Flasher</li>
       <li>R53 Coding</li>
@@ -75,10 +75,10 @@
 
     <h2>Summary</h2>
     <p>
-      We do <strong>not</strong> run our own servers that collect your personal data.
-      Vehicle and coding data stay on your device unless you choose to share a file.
-      Google Play may process purchase and integrity information when you use paid
-      features, under Google’s policies.
+      Vehicle and coding data stay on your device unless you choose to share a file,
+      or choose to upload a log to Geekopolis Logs (described below). Google Play may
+      process purchase and integrity information when you use paid features, under
+      Google’s policies.
     </p>
 
     <h2>Information the apps store on your device</h2>
@@ -97,8 +97,48 @@
       </li>
     </ul>
     <p>
-      These files are not uploaded by the apps. You may export or share them yourself
-      (for example via the Android share sheet or Datazap).
+      The apps never upload these files on their own. You can export or share them
+      yourself (for example through the Android share sheet), and the Logger can
+      upload a log you pick to Geekopolis Logs.
+    </p>
+
+    <h2>Uploading a log to Geekopolis Logs (Logger)</h2>
+    <p>
+      <strong>Share log link</strong> in the Logger's graph screen uploads one saved log to
+      <a href="https://logs.geekopolis.com/">logs.geekopolis.com</a>, a site run by Geekopolis,
+      so it can be viewed and analysed there. Nothing is uploaded until you confirm, and a log
+      that is still recording can't be uploaded.
+    </p>
+    <ul>
+      <li>
+        <strong>Who can see it:</strong> anyone with the log's link can view and download the
+        whole file. The link isn't listed or searchable, but treat it like the file itself. A log
+        can carry your VIN or other vehicle identifiers if they were recorded in it.
+      </li>
+      <li>
+        <strong>What the site keeps:</strong> the log file and its title and notes, which app and
+        version sent it, when, and a one-way hash of the network address it came from, used only
+        to limit abuse. The site doesn't keep your address itself.
+      </li>
+      <li>
+        <strong>Checking your purchase:</strong> uploads come with the unlock. The first time you
+        upload, the app sends the site your Google Play purchase receipt (order number, product,
+        purchase token and app name, signed by Google) so the site can confirm the purchase. The
+        site keeps the order number and a one-way hash of the purchase token, and gives the app an
+        access code it stores and sends with each upload. If Matt gave you an access code
+        instead, that code is sent.
+      </li>
+      <li>
+        <strong>Editing and deleting:</strong> after an upload the app saves a private edit key on
+        your phone. <strong>Manage upload</strong> opens the log on the site, where that key lets
+        you change its title and notes or delete it. Deleted logs stop being available straight
+        away. Email matt@geekopolis.com and an upload, or everything tied to your purchase, will be
+        removed.
+      </li>
+    </ul>
+    <p>
+      Uploads aren't sold, shared or used for advertising. They're used to show you your log and,
+      if you ask for help, to look at it with you.
     </p>
 
     <h2>Device connections (not sent to us)</h2>
@@ -125,6 +165,10 @@
         purchase restoration.
       </li>
       <li>
+        <strong>Geekopolis Logs</strong> (Logger), only when you upload a log: the purchase
+        check and the upload described above.
+      </li>
+      <li>
         <strong>Google Play Integrity</strong> (Logger, when enabled) — the app
         may request an integrity token from Google and send that token (plus a
         nonce and package name) to a developer-configured verify endpoint. The
@@ -148,15 +192,16 @@
       according to
       <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>.
       If you share a log or backup with another app or website, that destination’s
-      policy applies.
+      policy applies. Geekopolis Logs is covered by this policy.
     </p>
 
     <h2>Data retention and deletion</h2>
     <p>
       Local logs, backups, and settings remain until you delete them in the app,
       clear the app’s storage, or uninstall. Uninstalling removes app-private data
-      on the device. Play purchase records are retained by Google as part of your
-      Google account.
+      on the device. Logs uploaded to Geekopolis Logs stay until you delete them with
+      their edit key or ask us to. Play purchase records are retained by Google as part
+      of your Google account.
     </p>
 
     <h2>Changes</h2>
@@ -167,9 +212,7 @@
 
     <h2>Contact</h2>
     <p>
-      Questions about this policy or the apps: use the email address listed on
-      the Play Store developer contact for these apps, or open an issue on the
-      public firmware repository that hosts this page.
+      Questions about this policy, the apps or an uploaded log: matt@geekopolis.com.
     </p>
   </main>
 </body>
